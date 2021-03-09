@@ -3,6 +3,13 @@ node_js:
   - '12'
 git:
   depth: 3
+notifications:
+  email:
+    recipients:
+      - me@carlosvldz.com
+      - carlosvldz@outlook.com
+    on_success: always
+    on_failure: always
 script:
   - yarn build
 deploy:
